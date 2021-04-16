@@ -8,9 +8,9 @@
 
 ```xml
 <dependency>
-    <groupId>com.liying.boot</groupId>
+    <groupId>com.github.dzy5639313</groupId>
     <artifactId>jpa-spring-boot-starter</artifactId>
-    <version>3.0.0-RELEASE</version>
+    <version>1.0.0-RELEASE</version>
 </dependency>
 ```
 

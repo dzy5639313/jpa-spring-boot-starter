@@ -31,6 +31,23 @@ spring:
 ```
 ```java
 /**
+ * 定义model
+ */
+@Data
+@Entity(name = "gameModel")
+@Table(name = "lot_game")
+public class GameModel {
+    @Id
+    @Column(name = "id")
+    private Long id;
+    @Column(name = "game_name")
+    private String gameName;
+    @Column(name = "game_code")
+    private String gameCode;
+}
+```
+```java
+/**
  * 自定义repository接口
  */
 public interface GameCustomRepository {

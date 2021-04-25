@@ -1,6 +1,8 @@
 package com.liying.boot.jpa;
 
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.dao.annotation.PersistenceExceptionTranslationPostProcessor;
 
 /**
  * @author solomon
@@ -8,5 +10,8 @@ import org.springframework.context.annotation.Configuration;
  */
 @Configuration
 public class CustomJPAAutoConfiguration {
-
+    @Bean
+    PersistenceExceptionTranslationPostProcessor persistenceExceptionTranslationPostProcessor(){
+        return new PersistenceExceptionTranslationPostProcessor();
+    }
 }

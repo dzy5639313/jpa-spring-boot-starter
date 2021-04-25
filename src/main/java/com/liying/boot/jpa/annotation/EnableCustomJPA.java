@@ -1,10 +1,8 @@
 package com.liying.boot.jpa.annotation;
 
 import com.liying.boot.jpa.BaseRepositoryFactoryBean;
-import com.liying.boot.jpa.JpaConfig;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.domain.EntityScan;
-import org.springframework.context.annotation.Import;
 import org.springframework.core.annotation.AliasFor;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
@@ -22,7 +20,6 @@ import java.lang.annotation.*;
 @EnableAutoConfiguration
 @EntityScan
 @EnableJpaRepositories
-@Import(value = JpaConfig.class)
 public @interface EnableCustomJPA {
     /**
      * Entity 包扫描路径, e.g. com.liying.**.model
